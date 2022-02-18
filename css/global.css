@@ -156,6 +156,11 @@ footer .links {
 footer .links a {
   color: var(--dark-desaturated-cyan);
   padding: 1rem 2rem;
+  transition: color 0.2s;
+}
+
+footer .links a:hover {
+  color: var(--white);
 }
 
 footer .social-medias {
