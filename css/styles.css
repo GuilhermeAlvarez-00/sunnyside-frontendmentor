@@ -1,5 +1,5 @@
-/* HOME */
-#home .container {
+/* HERO */
+#hero .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,21 +7,92 @@
   margin-top: 2.75rem;
 }
 
-#home .container h1 {
+#hero .container h1 {
   font-size: 2.75rem;
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
-#home .container img {
+#hero .container img {
   width: 2rem;
-  margin-top: 8.5rem;
+  margin-top: 4rem;
 }
 
-@media (max-width: 768px) {
-  #home .container h1 {
+/* GRID */
+.text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  max-width: 22rem;
+  margin: 0 auto;
+  grid-area: left;
+}
+
+.text h2 {
+  max-width: 22rem;
+  color: var(--very-dark-desaturated-blue);
+  font-size: 2rem;
+}
+
+.text p {
+  max-width: 22rem;
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
+.text .link1::after {
+  background: hsla(51, 100%, 49%, 0.5);
+}
+
+.text .link1:hover::after {
+  background: hsl(51, 100%, 49%);
+}
+
+.image {
+  grid-area: right;
+}
+
+.image picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section2 .text .link1::after {
+  background: hsla(7, 99%, 70%, 0.5);
+}
+
+.section2 .text .link1:hover::after {
+  background: hsl(7, 99%, 70%);
+}
+
+/* SECTION2 */
+.section2 .text {
+  grid-area: right;
+}
+
+.section2 .image {
+  grid-area: left;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 740px) {
+  #hero .container h1 {
     font-size: 2.5rem;
     text-align: center;
+  }
+
+  .text,
+  .section2 .text {
+    grid-area: down;
+  }
+
+  .image,
+  .section2 .image {
+    grid-area: up;
   }
 }
