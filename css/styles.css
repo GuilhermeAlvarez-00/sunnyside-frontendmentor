@@ -79,6 +79,45 @@
   grid-area: left;
 }
 
+/* BACKGROUND */
+.background {
+  background-position: center;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+.bg2 {
+  background-image: url('../images/desktop/image-photography.jpg');
+}
+
+.background .text {
+  margin-top: 28rem;
+  text-align: center;
+  align-items: center;
+}
+
+.background .text h2 {
+  font-size: 1.75rem;
+}
+
+.bg1 .text h2 {
+  color: var(--dark-desaturated-cyan);
+}
+
+.bg1 .text p {
+  color: var(--dark-desaturated-cyan);
+}
+
+.bg2 .text h2 {
+  color: var(--dark-blue);
+}
+
+.bg2 .text p {
+  color: var(--dark-blue);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 740px) {
   #hero .container h1 {
@@ -88,7 +127,10 @@
 
   .text,
   .section2 .text {
+    align-items: center;
+    text-align: center;
     grid-area: down;
+    padding: 4rem 2rem;
   }
 
   .image,
