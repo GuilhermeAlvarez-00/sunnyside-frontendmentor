@@ -141,6 +141,35 @@ nav .icon-menu {
   cursor: pointer;
 }
 
+footer {
+  background: hsl(168, 34%, 41%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links {
+  margin: 2rem 0 4rem;
+}
+
+footer .links a {
+  color: var(--dark-desaturated-cyan);
+  padding: 1rem 2rem;
+}
+
+footer .social-medias {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 400px) {
+  footer .links a {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 740px) {
   #header {
     height: auto;
