@@ -40,7 +40,7 @@
 .text p {
   max-width: 22rem;
   color: var(--very-dark-grayish-blue);
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   margin: 2rem 0;
 }
 
@@ -118,6 +118,49 @@
   color: var(--dark-blue);
 }
 
+/* TESTIMONIALS */
+#testimonials .container > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--grayish-blue);
+  letter-spacing: 0.5rem;
+  margin: 4.75rem 0 4rem;
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  text-align: center;
+}
+
+.cards .card img {
+  width: 6.75rem;
+  border-radius: 50%;
+}
+
+.cards .card .text {
+  max-width: 24rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards .card .text p:last-child {
+  margin: 0;
+  color: var(--grayish-blue);
+}
+
+.cards .card .text h2 {
+  font-size: 1.5rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 740px) {
   #hero .container h1 {
@@ -136,5 +179,14 @@
   .image,
   .section2 .image {
     grid-area: up;
+  }
+
+  #testimonials .container h2 {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .cards .card .text {
+    padding: 0rem 2rem 4rem;
   }
 }
